@@ -1,9 +1,9 @@
 (function () {
-    const getUTM = (name) => {
-      const params = new URLSearchParams(window.location.search);
-      return params.get(name) || null;
-    };
-  
+    // const getUTM = (name) => {
+    //   const params = new URLSearchParams(window.location.search);
+    //   return params.get(name) || null;
+    // };
+    console.log("Tracking from CDN!", eventType, additionalData);
     window.trackEvent = async function (eventType, additionalData = {}) {
       const sessionId = localStorage.getItem("sessionId") || crypto.randomUUID();
       localStorage.setItem("sessionId", sessionId);
