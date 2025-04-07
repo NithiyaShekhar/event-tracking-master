@@ -1,0 +1,12 @@
+{
+    "routes": [
+      {
+        "src": "/tracker.js",
+        "headers": {
+          "Content-Type": "application/javascript"
+        },
+        "dest": "/tracker.js"
+      }
+    ]
+  }
+  
